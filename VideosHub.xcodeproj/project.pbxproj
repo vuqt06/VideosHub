@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		055FFDF1C56E934620E479B8 /* Pods_VideosHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93FA7D116DC0824EABB348F /* Pods_VideosHub.framework */; };
+		5248D641288A2EA4004EC4B4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248D640288A2EA4004EC4B4 /* Constant.swift */; };
 		526926372888DEA20061FB4D /* VideosHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526926362888DEA20061FB4D /* VideosHubApp.swift */; };
 		526926392888DEA20061FB4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526926382888DEA20061FB4D /* ContentView.swift */; };
 		5269263B2888DEA50061FB4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5269263A2888DEA50061FB4D /* Assets.xcassets */; };
 		5269263E2888DEA50061FB4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5269263D2888DEA50061FB4D /* Preview Assets.xcassets */; };
+		52C1F1D7288AEA2A00832F17 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1F1D6288AEA2A00832F17 /* Response.swift */; };
+		52C1F1D9288AEA5300832F17 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1F1D8288AEA5300832F17 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		456959F615300FDA4BA82C93 /* Pods-VideosHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideosHub.release.xcconfig"; path = "Target Support Files/Pods-VideosHub/Pods-VideosHub.release.xcconfig"; sourceTree = "<group>"; };
+		5248D640288A2EA4004EC4B4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		526926332888DEA20061FB4D /* VideosHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideosHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526926362888DEA20061FB4D /* VideosHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosHubApp.swift; sourceTree = "<group>"; };
 		526926382888DEA20061FB4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5269263A2888DEA50061FB4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5269263D2888DEA50061FB4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52C1F1D6288AEA2A00832F17 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		52C1F1D8288AEA5300832F17 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		9F615C253FF7532937BD0D1B /* Pods-VideosHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideosHub.debug.xcconfig"; path = "Target Support Files/Pods-VideosHub/Pods-VideosHub.debug.xcconfig"; sourceTree = "<group>"; };
 		E93FA7D116DC0824EABB348F /* Pods_VideosHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideosHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5248D63F288A2E88004EC4B4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5248D640288A2EA4004EC4B4 /* Constant.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		5269262A2888DEA20061FB4D = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +74,8 @@
 			children = (
 				526926362888DEA20061FB4D /* VideosHubApp.swift */,
 				526926382888DEA20061FB4D /* ContentView.swift */,
+				52C1F1D5288AEA1C00832F17 /* Models */,
+				5248D63F288A2E88004EC4B4 /* Helpers */,
 				5269263A2888DEA50061FB4D /* Assets.xcassets */,
 				5269263C2888DEA50061FB4D /* Preview Content */,
 			);
@@ -72,6 +88,15 @@
 				5269263D2888DEA50061FB4D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52C1F1D5288AEA1C00832F17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52C1F1D6288AEA2A00832F17 /* Response.swift */,
+				52C1F1D8288AEA5300832F17 /* Video.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		979A1B6E303999A1A4ED64EC /* Frameworks */ = {
@@ -88,7 +113,6 @@
 				9F615C253FF7532937BD0D1B /* Pods-VideosHub.debug.xcconfig */,
 				456959F615300FDA4BA82C93 /* Pods-VideosHub.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,8 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C1F1D7288AEA2A00832F17 /* Response.swift in Sources */,
 				526926392888DEA20061FB4D /* ContentView.swift in Sources */,
 				526926372888DEA20061FB4D /* VideosHubApp.swift in Sources */,
+				5248D641288A2EA4004EC4B4 /* Constant.swift in Sources */,
+				52C1F1D9288AEA5300832F17 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
